@@ -1,0 +1,113 @@
+/* ===== Interface orientada a tarefas ===== */
+.tarefas { -fx-background-color: #f4f7f6; -fx-font-family: "Segoe UI", "Helvetica Neue", sans-serif; -fx-font-size: 16px; -fx-text-fill: #13302c; }
+.tarefas .label { -fx-text-fill: #13302c; }
+.tarefas .barra-superior { -fx-background-color: white; -fx-border-color: transparent transparent #d6e0dd transparent; -fx-padding: 14 32 14 32; }
+.tarefas .marca { -fx-font-size: 18px; -fx-font-weight: 600; -fx-text-fill: #0f766e; }
+.tarefas .titulo { -fx-font-size: 30px; -fx-font-weight: 600; }
+.tarefas .subtitulo { -fx-font-size: 16px; -fx-text-fill: #3f5a55; }
+.tarefas .legenda { -fx-font-size: 13px; -fx-text-fill: #3f5a55; }
+.tarefas .botao, .tarefas .botao-primario { -fx-min-height: 48px; -fx-padding: 0 28 0 28; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-font-size: 16px; -fx-cursor: hand; }
+.tarefas .botao { -fx-background-color: white; -fx-border-color: #9fb5b0; -fx-text-fill: #13302c; }
+.tarefas .botao-primario { -fx-background-color: #0f766e; -fx-border-color: #0f766e; -fx-text-fill: white; -fx-font-weight: 600; }
+.tarefas .botao-primario:disabled { -fx-opacity: 0.45; }
+.tarefas .botao:focused, .tarefas .botao-primario:focused, .tarefas .campo-senha:focused { -fx-border-color: #13302c; }
+.tarefas .caixa { -fx-background-radius: 14; -fx-border-radius: 14; -fx-border-width: 2; -fx-padding: 18 22 18 22; }
+.tarefas .caixa-neutra { -fx-background-color: white; -fx-border-color: #d6e0dd; }
+.tarefas .caixa-info { -fx-background-color: #eaf4f2; -fx-border-color: #d6e0dd; }
+.tarefas .caixa-aviso { -fx-background-color: #fff8e6; -fx-border-color: #b7791f; }
+.tarefas .caixa-erro { -fx-background-color: #fef3f2; -fx-border-color: #b42318; }
+.tarefas .caixa-negrito { -fx-font-weight: 700; }
+.tarefas .texto-erro { -fx-text-fill: #b42318; -fx-font-weight: 600; }
+.tarefas .rotulo-campo { -fx-font-weight: 600; }
+.tarefas .campo-senha { -fx-font-size: 18px; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-width: 2; -fx-border-color: #9fb5b0; -fx-background-color: white; }
+.tarefas .campo-erro { -fx-border-color: #b42318; }
+.tarefas .passo-bola { -fx-min-width: 30; -fx-min-height: 30; -fx-alignment: center; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: #9fb5b0; -fx-background-color: white; -fx-font-size: 14px; -fx-font-weight: 600; }
+.tarefas .passo-bola { -fx-text-fill: #3f5a55; }
+.tarefas .passo-feito { -fx-background-color: #0f766e; -fx-border-color: #0f766e; }
+.tarefas .passo-feito { -fx-text-fill: white; }
+.tarefas .passo-nome { -fx-font-size: 15px; }
+.tarefas .passo-nome-atual { -fx-font-size: 15px; -fx-font-weight: 700; }
+.tarefas .passo-linha { -fx-background-color: #9fb5b0; }
+.tarefas .cartao-acao { -fx-background-color: white; -fx-border-color: #d6e0dd; -fx-border-width: 2; -fx-background-radius: 14; -fx-border-radius: 14; -fx-padding: 24; -fx-cursor: hand; -fx-alignment: center-left; }
+.tarefas .cartao-acao:hover, .tarefas .cartao-acao:focused { -fx-border-color: #0f766e; }
+.tarefas .cartao-titulo { -fx-font-size: 24px; -fx-font-weight: 600; -fx-text-fill: #0f766e; }
+.tarefas .cartao-texto { -fx-font-size: 16px; -fx-text-fill: #3f5a55; }
+.tarefas .icone-ok { -fx-font-size: 40px; -fx-text-fill: #0f766e; }
+.tarefas .check-box { -fx-font-size: 15px; }
+.tarefas .progress-bar > .bar { -fx-background-color: #0f766e; -fx-background-insets: 0; -fx-padding: 0.5em; }
+
+/* ===== Interface técnica ===== */
+.tecnica { -fx-background-color: #f0f0f0; -fx-font-family: "Segoe UI", "DejaVu Sans", sans-serif; -fx-font-size: 13px; }
+.tecnica .t-barra { -fx-background-color: #e4e4e4; -fx-border-color: transparent transparent #bdbdbd transparent; }
+.tecnica .t-titulo { -fx-font-weight: bold; -fx-font-size: 14px; }
+.tecnica .t-trocar { -fx-background-color: #2e7d32; -fx-text-fill: white; -fx-background-radius: 4; -fx-font-weight: bold; }
+.tecnica .t-legenda { -fx-font-size: 11px; -fx-text-fill: #555555; }
+.tecnica .t-log { -fx-font-family: "Consolas", "DejaVu Sans Mono", monospace; -fx-font-size: 12px; }
+.tecnica .t-status { -fx-background-color: #e4e4e4; -fx-border-color: #bdbdbd transparent transparent transparent; }
+
+/* ===== Indicador de força da senha (comum às duas interfaces) ===== */
+.forca-seg { -fx-background-radius: 4; -fx-background-color: #d6e0dd; }
+.forca-seg.forca-fraca { -fx-background-color: #b42318; }
+.forca-seg.forca-media { -fx-background-color: #b7791f; }
+.forca-seg.forca-forte { -fx-background-color: #0f766e; }
+.forca-texto { -fx-text-fill: #3f5a55; }
+.tecnica .forca-texto { -fx-font-size: 12px; }
+.tecnica .t-erro { -fx-text-fill: #b42318; -fx-font-weight: bold; }
+
+/* ===== Janela de ajuda ===== */
+.ajuda { -fx-background-color: #f4f7f6; }
+.ajuda-cabecalho { -fx-padding: 22 28 18 28; }
+.ajuda-cabecalho-titulo { -fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: white; }
+.ajuda-cabecalho-subtitulo { -fx-font-size: 14px; }
+.ajuda-abas { -fx-padding: 14 28 10 28; -fx-background-color: white; -fx-border-color: transparent transparent #d6e0dd transparent; }
+.ajuda-aba { -fx-background-color: white; -fx-border-width: 2; -fx-padding: 6 16 6 16; -fx-cursor: hand; -fx-font-size: 14px; }
+.ajuda-rolagem, .ajuda-rolagem > .viewport { -fx-background-color: transparent; -fx-background: transparent; }
+.ajuda-conteudo { -fx-padding: 20 28 20 28; }
+.ajuda-passo { -fx-background-color: white; -fx-border-color: #d6e0dd; -fx-border-width: 1.5; -fx-padding: 12 14 12 14; }
+.ajuda-passo-numero { -fx-font-weight: bold; -fx-text-fill: white; }
+.ajuda-passo-texto, .ajuda-paragrafo, .ajuda-caixa-texto, .ajuda-termo-descricao { -fx-text-fill: #13302c; }
+.ajuda-caixa { -fx-padding: 12 16 12 16; -fx-border-width: 0 0 0 5; }
+.ajuda-caixa-rotulo { -fx-font-weight: bold; }
+.ajuda-termo { -fx-background-color: white; -fx-border-color: #d6e0dd; -fx-border-width: 1.5; -fx-padding: 12 16 12 16; }
+.ajuda-termo-nome { -fx-font-weight: bold; -fx-text-fill: #13302c; }
+.ajuda-selo { -fx-text-fill: white; -fx-font-size: 11px; -fx-font-weight: bold; -fx-padding: 2 9 2 9; }
+.ajuda-rodape { -fx-padding: 12 28 18 28; -fx-background-color: white; -fx-border-color: #d6e0dd transparent transparent transparent; }
+.ajuda-fechar { -fx-text-fill: white; -fx-padding: 8 26 8 26; -fx-font-weight: bold; -fx-cursor: hand; }
+
+/* tema: orientada a tarefas (verde-azulado, cantos arredondados, texto grande) */
+.tarefas.ajuda .ajuda-cabecalho { -fx-background-color: #0f766e; }
+.tarefas.ajuda .ajuda-cabecalho-subtitulo { -fx-text-fill: #d5ece9; -fx-font-size: 16px; }
+.tarefas.ajuda .ajuda-aba { -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #9fb5b0; -fx-text-fill: #13302c; -fx-font-size: 16px; }
+.tarefas.ajuda .ajuda-aba:selected { -fx-background-color: #0f766e; -fx-border-color: #0f766e; -fx-text-fill: white; -fx-font-weight: bold; }
+.tarefas.ajuda .ajuda-passo { -fx-background-radius: 12; -fx-border-radius: 12; }
+.tarefas.ajuda .ajuda-passo-numero { -fx-background-color: #0f766e; -fx-background-radius: 16; }
+.tarefas.ajuda .ajuda-passo-texto, .tarefas.ajuda .ajuda-paragrafo, .tarefas.ajuda .ajuda-caixa-texto { -fx-font-size: 16px; }
+.tarefas.ajuda .ajuda-caixa { -fx-background-radius: 10; -fx-border-radius: 10; }
+.tarefas.ajuda .ajuda-dica { -fx-background-color: #eaf4f2; -fx-border-color: #0f766e; }
+.tarefas.ajuda .ajuda-dica .ajuda-caixa-rotulo { -fx-text-fill: #0f766e; }
+.tarefas.ajuda .ajuda-aviso { -fx-background-color: #fff8e6; -fx-border-color: #b7791f; }
+.tarefas.ajuda .ajuda-aviso .ajuda-caixa-rotulo { -fx-text-fill: #8a5a12; }
+.tarefas.ajuda .ajuda-fechar { -fx-background-color: #0f766e; -fx-background-radius: 10; -fx-font-size: 16px; }
+
+/* tema: técnica (cinza-escuro e verde, cantos retos, fonte menor, termos em monoespaçado) */
+.tecnica.ajuda { -fx-background-color: #f0f0f0; -fx-font-size: 13px; }
+.tecnica.ajuda .ajuda-cabecalho { -fx-background-color: #2b2b2b; }
+.tecnica.ajuda .ajuda-cabecalho-titulo { -fx-font-size: 22px; }
+.tecnica.ajuda .ajuda-cabecalho-subtitulo { -fx-text-fill: #c8c8c8; }
+.tecnica.ajuda .ajuda-abas { -fx-background-color: #e4e4e4; -fx-border-color: transparent transparent #bdbdbd transparent; }
+.tecnica.ajuda .ajuda-aba { -fx-background-radius: 3; -fx-border-radius: 3; -fx-border-color: #9e9e9e; -fx-background-color: #f7f7f7; -fx-text-fill: #222222; }
+.tecnica.ajuda .ajuda-aba:selected { -fx-background-color: #2e7d32; -fx-border-color: #2e7d32; -fx-text-fill: white; -fx-font-weight: bold; }
+.tecnica.ajuda .ajuda-passo, .tecnica.ajuda .ajuda-termo { -fx-background-color: #fafafa; -fx-border-color: #cfcfcf; -fx-border-width: 1; }
+.tecnica.ajuda .ajuda-passo-numero { -fx-background-color: #2e7d32; -fx-background-radius: 4; -fx-font-family: "Consolas", "DejaVu Sans Mono", monospace; }
+.tecnica.ajuda .ajuda-passo-texto, .tecnica.ajuda .ajuda-paragrafo, .tecnica.ajuda .ajuda-caixa-texto, .tecnica.ajuda .ajuda-termo-descricao { -fx-font-size: 13px; -fx-text-fill: #222222; }
+.tecnica.ajuda .ajuda-termo-nome { -fx-font-family: "Consolas", "DejaVu Sans Mono", monospace; -fx-font-size: 14px; }
+.tecnica.ajuda .ajuda-selo { -fx-background-color: #2e7d32; -fx-background-radius: 3; -fx-font-family: "Consolas", "DejaVu Sans Mono", monospace; }
+.tecnica.ajuda .ajuda-dica { -fx-background-color: #eef6ee; -fx-border-color: #2e7d32; }
+.tecnica.ajuda .ajuda-dica .ajuda-caixa-rotulo { -fx-text-fill: #2e7d32; }
+.tecnica.ajuda .ajuda-aviso { -fx-background-color: #fff6e0; -fx-border-color: #c77700; }
+.tecnica.ajuda .ajuda-aviso .ajuda-caixa-rotulo { -fx-text-fill: #9a5a00; }
+.tecnica.ajuda .ajuda-fechar { -fx-background-color: #2e7d32; -fx-background-radius: 4; }
+
+/* ===== Arrastar e soltar ===== */
+.tarefas.arrastando { -fx-border-color: #0f766e; -fx-border-width: 4; -fx-border-style: dashed inside; }
+.tecnica.arrastando { -fx-border-color: #2e7d32; -fx-border-width: 3; -fx-border-style: dashed inside; }

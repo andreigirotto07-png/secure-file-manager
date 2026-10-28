@@ -1,0 +1,7 @@
+target/
+*.csv
+.idea/
+*.iml
+
+logs/
+target/

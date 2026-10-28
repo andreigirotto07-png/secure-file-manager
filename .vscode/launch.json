@@ -1,0 +1,61 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "br.edu.ifrs.sfm.App",
+            "projectName": "secure-file-manager"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "br.edu.ifrs.sfm.Main",
+            "projectName": "secure-file-manager"
+        },
+        {
+            "type": "java",
+            "name": "Estudo (participante)",
+            "request": "launch",
+            "mainClass": "br.edu.ifrs.sfm.Main",
+            "projectName": "secure-file-manager",
+            "cwd": "${workspaceFolder}",
+            "args": [
+                "--teste",
+                "--modo=${input:modo}",
+                "--tarefa=${input:tarefa}",
+                "--log=logs/${input:participante}_${input:modo}_${input:tarefa}.csv"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "participante",
+            "type": "promptString",
+            "description": "Código do participante (ex.: P01)",
+            "default": "P01"
+        },
+        {
+            "id": "modo",
+            "type": "pickString",
+            "description": "Interface a abrir",
+            "options": ["tecnico", "tarefas"],
+            "default": "tecnico"
+        },
+        {
+            "id": "tarefa",
+            "type": "pickString",
+            "description": "Tarefa a registrar",
+            "options": ["T1", "T2", "T3", "T4", "T5", "T6"],
+            "default": "T1"
+        }
+    ]
+}
